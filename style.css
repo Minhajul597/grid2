@@ -1,0 +1,38 @@
+#m{
+    background-color: rgb(20, 120, 207);
+    grid-area: m;
+}
+#i{
+    background-color: aquamarine;
+    grid-area: i;
+}
+#n{
+    background-color: blanchedalmond;
+    grid-area: n;
+}
+#h{
+    background-color: blueviolet;
+    grid-area: h;
+}
+#a{
+    background-color: coral;
+    grid-area: a;
+}
+.minhaj{
+    display: grid;
+    padding: 5px;
+    background-color: black;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: .6fr 1fr .2fr ;
+    grid-template-areas: "m m i i" "n h h h" "a a a a";
+    height: 50vh;
+    gap: 5px;
+    text-align: center;
+}
+@media only screen and (max-width:650px){
+    .minhaj{
+        grid-template-columns: 1fr;
+        grid-template-rows: .2fr .2fr .2fr .2fr .2fr;
+        grid-template-areas: "m" "i" "n" "h" "a";
+    }
+}
